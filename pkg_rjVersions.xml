@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="1.7">
+	<name>rjVersions</name>
+	<packagename>rjVersions</packagename>
+	<version>1.1</version>
+	<creationDate>August 2011</creationDate>
+	<author>Ronald J. de Vries</author>
+	<authorEmail>post@rjdevries.eu</authorEmail>
+	<authorUrl>http://www.rjdev.nl</authorUrl>
+	<packager>rjdev</packager>
+	<packagerurl></packagerurl>
+	<description>A small and powerfull content versioning system. Don't forget to publish the plugins.</description>
+	<files folder="packages">
+		<file type="component" id="com_versions">com_versions.zip</file>
+		<file type="plugin" id="plg_content_versions" group="content">plg_content_versions.zip</file>
+		<file type="plugin" id="" group="editors-xtd">plg_editors-xtd.zip</file>
+	</files>
+</extension>
