@@ -1,4 +1,4 @@
 pkg_rjVersions
 ==============
 
-Content versioning for Joomla
+Content versioning for Joomla 3.x
