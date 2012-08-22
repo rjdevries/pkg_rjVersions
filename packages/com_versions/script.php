@@ -19,7 +19,9 @@ class com_versionsInstallerScript
 	 * method to run after an install/update/uninstall method
 	 */
 	function postflight($type, $parent){
-        if ($type == 'install' || $type == 'update') {
+        
+		// Remove menu item
+		if ($type == 'install' || $type == 'update') {
             $db = JFactory::getDBO();
             $query = $db->getQuery(true);
             $query->delete('#__menu');
@@ -28,6 +30,20 @@ class com_versionsInstallerScript
             $query->where('client_id = 1');
             $db->setQuery($query);
             $db->query();
-        }   
+        }
+		
+		// Enable the plugins
+		if ($type == 'install') {
+            $query = "
+				UPDATE #__extensions 
+				   SET `enabled` = 1 
+				 WHERE `type` = 'plugin' 
+				   AND `element` = 'versions'
+				   AND `folder` = 'editors-xtd'
+					OR `folder` = 'content'
+				";
+            $db->setQuery( $query );
+            $db->query(); 
+        }
     }   
 }
