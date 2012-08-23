@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<extension type="package" version="1.7">
+<extension type="package" version="3.5">
 	<name>rjVersions</name>
 	<packagename>rjVersions</packagename>
-	<version>1.1</version>
-	<creationDate>August 2011</creationDate>
+	<version>1.2</version>
+	<creationDate>August 2012</creationDate>
 	<author>Ronald J. de Vries</author>
 	<authorEmail>post@rjdevries.eu</authorEmail>
 	<authorUrl>http://www.rjdev.nl</authorUrl>
